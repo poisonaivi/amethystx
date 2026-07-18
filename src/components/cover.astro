@@ -1,0 +1,89 @@
+---
+import CopyrightText from "../components/copyrightText.astro";
+---
+
+<div id="hero" class="pair">
+    <div id="image" style="background-image: url('/hero-image.png'); background-position: 50% 50%; background-size: cover; box-shadow: 0 0 50px var(--bg-grid);">
+        <!-- section -->
+    </div>
+    <aside>
+        <h1 style="margin: 0;">amethyst</h1>
+        <div class="tall-only">
+            <br>
+            <table>
+                <tr>
+                    <td><small>Group</small></td>
+                    <td>Quartz</td>
+                </tr>
+                <tr>
+                    <td><small>Category</small></td>
+                    <td>Tectosilicate minerals</td>
+                </tr>
+                <tr>
+                    <td><small>Formula</small></td>
+                    <td>Silica (SiO<sub>2</sub>)</td>
+                </tr>
+                <tr>
+                    <td><small>Hardness</small></td>
+                    <td>7 (Mohs scale)</td>
+                </tr>
+                <tr>
+                    <td><small>Color</small></td>
+                    <td>Purple, violet</td>
+                </tr>
+                <tr>
+                    <td><small>Luster</small></td>
+                    <td>Vitreous, glassy</td>
+                </tr>
+                <tr>
+                    <td><small>Streak</small></td>
+                    <td>White</td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+        </div>
+        <nav>
+            <h3 class="nav-item"><a class="reveal" href="/about">about me</a></h3>
+            <h3 class="nav-item"><a class="reveal" href="/blog">blog</a></h3>
+            <h3 class="nav-item"><a class="reveal" href="/contact">contact</a></h3>
+        </nav>
+        <div class="tall-only">
+            <hr>
+        </div>
+
+        <div class="wide-only tall-only" style="margin-top: auto;">
+            <CopyrightText />
+        </div>
+    </aside>
+</div>
+
+<style>
+    a {
+        color: unset;
+    }
+    #hero {
+        height: 80lvh;
+        @media screen and (max-width: 800px) {
+            height: unset;
+        }
+    }
+	#image {
+		height: 80lvh;
+		width: 100%;
+	}
+	aside {
+        display: flex;
+        flex-direction: column;
+        padding: var(--margin);
+        background-image: linear-gradient(#000, #0000);
+	    @media screen and (min-width: 800px) {
+            min-width: var(--aside);
+            padding-bottom: 10px;
+        }
+	}
+    td:nth-child(1) {
+        min-width: 80px;
+        font-style: italic;
+    }
+</style>

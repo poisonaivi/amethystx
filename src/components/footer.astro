@@ -1,0 +1,42 @@
+---
+import CopyrightText from "../components/copyrightText.astro";
+---
+
+<footer>
+    <div id="top">
+        <div style="height: 150px;"></div>
+        <hr>
+        <h3 style="display: inline-block; line-height: 2em; margin: 0;">amethystx.net</h3>
+        <span style="margin-left: 1em;">is a website made by someone who lives somewhere during some time.</span>
+        <br>
+        <CopyrightText />
+        <br><br>
+        <small><i>bc1qxkz99a77cwt8am04rn277egmvxddpv8crhj87e</i></small>
+        <div style="height: 10em"></div>
+    </div>
+    <div id="bottom">amethyst&nbsp;amethyst&nbsp;amethyst&nbsp;amethyst&nbsp;amethyst</div>
+</footer>
+
+<style>
+    footer {
+        position: relative;
+        min-height: 20em;
+        overflow: hidden;
+        background-image: linear-gradient(#0000, #000);
+    }
+    #top {
+        position: relative;
+        z-index: 2;
+    }
+    #bottom {
+        user-select: none;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 50%;
+        translate: -50% 40%;
+        opacity: 0.5;
+        font-size: 15rem;
+        color: var(--bg-acc);
+    }
+</style>
