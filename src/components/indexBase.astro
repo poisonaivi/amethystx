@@ -1,0 +1,12 @@
+---
+import Base from "../components/base.astro";
+import Cover from "../components/cover.astro";
+import Footer from "../components/footer.astro";
+const {title, ...rest} = Astro.props;
+---
+
+<Base title={title}>
+	<Cover />
+	<slot />
+	<Footer />
+</Base>
