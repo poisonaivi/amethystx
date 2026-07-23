@@ -1,12 +1,12 @@
 ---
 const {title, ...rest} = Astro.props;
+import "../styles/main.astro";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
-		<link rel="stylesheet" href="/styles/main.css" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} - amethystx.net</title>

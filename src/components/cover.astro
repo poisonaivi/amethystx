@@ -44,14 +44,13 @@ import CopyrightText from "../components/copyrightText.astro";
             <hr>
         </div>
         <nav>
-            <h3 class="nav-item"><a class="reveal" href="/about">about me</a></h3>
-            <h3 class="nav-item"><a class="reveal" href="/blog">blog</a></h3>
-            <h3 class="nav-item"><a class="reveal" href="/contact">contact</a></h3>
+            <h3 class="list-button"><a class="reveal" href="/about">about me</a></h3>
+            <h3 class="list-button"><a class="reveal" href="/blog">blog</a></h3>
+            <h3 class="list-button"><a class="reveal" href="/contact">contact</a></h3>
         </nav>
         <div class="tall-only">
             <hr>
         </div>
-
         <div class="wide-only tall-only" style="margin-top: auto;">
             <CopyrightText />
         </div>
@@ -63,9 +62,13 @@ import CopyrightText from "../components/copyrightText.astro";
         color: unset;
     }
     #hero {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
         height: 80lvh;
         @media screen and (max-width: 800px) {
             height: unset;
+            display: block;
         }
     }
 	#image {

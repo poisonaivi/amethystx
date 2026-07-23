@@ -2,11 +2,11 @@
 import Base from "../components/base.astro";
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-const {title, ...rest} = Astro.props;
+const {title, navName, ...rest} = Astro.props;
 ---
 
 <Base title={title}>
-    <Header />
+    <Header navName={navName} />
     <slot />
     <Footer />
 </Base>
