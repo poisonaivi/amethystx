@@ -29,6 +29,11 @@ const {navName, ...rest} = Astro.props;
     h3 {
         display: inline-block;
         white-space: nowrap;
-        transform-origin: 0 100%;
+    }
+
+    h3 {
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
     }
 </style>
